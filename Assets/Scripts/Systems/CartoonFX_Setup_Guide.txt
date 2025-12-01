@@ -1,0 +1,102 @@
+// CARTOON FX REMASTER FREE INTEGRATION GUIDE
+// ==========================================
+
+/*
+SETTING UP CARTOON FX SHOCKWAVE EFFECTS FOR OVERLOAD MODE
+
+1. IMPORT CARTOON FX REMASTER FREE:
+   - Get from Unity Asset Store
+   - Import the package into your project
+   - Navigate to CartoonFX/Prefabs folder
+
+2. RECOMMENDED SHOCKWAVE EFFECTS:
+   From Cartoon FX Remaster Free, these work well for shockwaves:
+   
+   - CFXR_Explosion_A_Smoke: Large explosion with smoke
+   - CFXR_Explosion_B_Smoke: Alternative explosion style
+   - CFXR_Shockwave_A: Pure shockwave ring effect
+   - CFXR_Shockwave_B: Alternative shockwave with particles
+   - CFXR_Magic_A: Magical energy burst
+   - CFXR_Magic_B: Alternative magical effect
+   - CFXR_ElectricExplosion_A: Electric-themed explosion
+
+3. SETUP IN OVERLOADMODE:
+   - Select OverloadMode GameObject in scene
+   - In Inspector, find "Visual Effects" section
+   - Drag chosen effect from Prefabs folder to "Shockwave Effect Prefab" field
+   - Adjust settings:
+     * Shockwave Effect Duration: 3-5 seconds
+     * Shockwave Effect Scale: 1.0-2.0 (based on your shockwave radius)
+
+4. FINE-TUNING SETTINGS:
+   
+   Scale Recommendations:
+   - Shockwave Radius 15 → Effect Scale 1.0
+   - Shockwave Radius 20 → Effect Scale 1.3  
+   - Shockwave Radius 10 → Effect Scale 0.7
+
+   Duration Recommendations:
+   - Fast action game: 2-3 seconds
+   - Dramatic effect: 4-5 seconds
+   - Minimal distraction: 1-2 seconds
+
+5. AUDIO INTEGRATION (Optional):
+   - Add AudioSource component to OverloadMode GameObject
+   - Assign audio clips:
+     * Overload Activation Sound: Dramatic power-up sound
+     * Shockwave Sound: Explosion or energy burst sound
+   - Recommended volume: 0.7-1.0 for dramatic effect
+
+6. TESTING YOUR SETUP:
+   - Use OverloadModeDebugger to quickly test effects
+   - Press F6 to force activate overload
+   - Check console for: "Created prefab shockwave effect at [position]"
+   - If you see "Using fallback primitive shockwave", the prefab isn't assigned
+
+7. CUSTOMIZATION OPTIONS:
+   
+   For Different Game Styles:
+   - Sci-Fi: CFXR_ElectricExplosion_A + metallic sounds
+   - Fantasy: CFXR_Magic_A/B + mystical sounds  
+   - Military: CFXR_Explosion_A_Smoke + explosion sounds
+   - Minimalist: CFXR_Shockwave_A + subtle whoosh sound
+
+8. TROUBLESHOOTING:
+   
+   Effect Not Appearing:
+   - Check prefab is assigned in inspector
+   - Verify prefab has ParticleSystem components
+   - Check console for error messages
+   
+   Effect Too Small/Large:
+   - Adjust "Shockwave Effect Scale" value
+   - Scale should roughly match your shockwave radius
+   
+   Effect Disappears Too Quickly:
+   - Increase "Shockwave Effect Duration"
+   - Some effects have built-in auto-destroy timers
+   
+   No Sound:
+   - Ensure AudioSource component exists on OverloadMode GameObject
+   - Check audio clips are assigned
+   - Verify AudioSource is not muted
+
+9. PERFORMANCE NOTES:
+   - Cartoon FX effects are optimized for performance
+   - Multiple particle systems may impact framerate on low-end devices  
+   - Consider simpler effects for mobile builds
+   - Effects auto-cleanup after duration expires
+
+10. ALTERNATIVE EFFECTS:
+    If you don't have Cartoon FX Remaster Free:
+    - Unity's built-in particle systems work too
+    - Create custom shockwave prefabs with ParticleSystem
+    - The fallback primitive effect will be used automatically
+
+EXAMPLE SETUP:
+1. Import Cartoon FX Remaster Free
+2. Drag "CFXR_Shockwave_A" to Shockwave Effect Prefab field
+3. Set Duration to 3 seconds, Scale to 1.5
+4. Add explosion sound clip
+5. Test with F6 key in play mode
+*/

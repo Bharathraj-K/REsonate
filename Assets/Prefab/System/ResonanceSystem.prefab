@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4120879083729834515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4757233505069474764}
+  - component: {fileID: 4910652373311548301}
+  m_Layer: 0
+  m_Name: ResonanceSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4757233505069474764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4120879083729834515}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.41595, y: 1.85399, z: 0.31253}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4910652373311548301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4120879083729834515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a739d4e5d2bcf447b04de7f1a6ae2e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResonanceSystem
+  linkRange: 5
+  linkDuration: 2
+  enemyLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  linkBeamPrefab: {fileID: 0}
+  redBeamMaterial: {fileID: 2100000, guid: 97a074be05e9e2345ac08404a9b7703f, type: 2}
+  greenBeamMaterial: {fileID: 2100000, guid: 750dae0df0eae8c4e879fd64b0e4eb51, type: 2}
+  blueBeamMaterial: {fileID: 2100000, guid: a428e88a0958a674a97b06e5047464a6, type: 2}

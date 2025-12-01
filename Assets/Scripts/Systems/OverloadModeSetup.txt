@@ -1,0 +1,79 @@
+// OVERLOAD MODE SETUP GUIDE
+// =========================
+
+/*
+PHASE 7: OVERLOAD MODE - SETUP INSTRUCTIONS
+
+1. ADD OVERLOAD MODE TO SCENE:
+   - Create empty GameObject named "OverloadMode"
+   - Add OverloadMode.cs script
+   - Position at (0,0,0) or attach to GameManager
+
+2. UPDATE GAME UI:
+   - Add two new TextMeshPro UI elements:
+     * Energy Display (for energy percentage/ready status)
+     * Overload Status (for active/cooldown messages)
+   - Assign these to GameUI component:
+     * energyText → Energy Display
+     * overloadStatusText → Overload Status
+
+3. SETUP CARTOON FX SHOCKWAVE (NEW):
+   - Import "Cartoon FX Remaster Free" from Asset Store
+   - Navigate to CartoonFX/Prefabs folder
+   - Recommended effects: CFXR_Shockwave_A, CFXR_Explosion_A_Smoke
+   - In OverloadMode inspector:
+     * Drag effect prefab to "Shockwave Effect Prefab" field
+     * Set "Shockwave Effect Scale" to 1.0-2.0
+     * Set "Shockwave Effect Duration" to 3-5 seconds
+
+4. ADD AUDIO (Optional):
+   - Add AudioSource component to OverloadMode GameObject
+   - Assign audio clips in inspector:
+     * Overload Activation Sound (power-up sound)
+     * Shockwave Sound (explosion/energy burst)
+
+5. CONFIGURE SETTINGS (Optional):
+   Energy Settings:
+   - energyPerKill: 15 (energy gained per enemy)
+   - energyRequired: 100 (energy needed to activate)
+   - energyDecayRate: 2 (energy lost per second when idle)
+   
+   Overload Settings:
+   - overloadDuration: 10 seconds
+   - overloadCooldown: 30 seconds
+   - shockwaveRadius: 15 units (affects all enemies in range)
+
+6. CONTROLS:
+   - SPACE or LEFT SHIFT: Activate overload (when energy is full)
+   
+7. EXPECTED BEHAVIOR:
+   - Kill enemies via resonance to gain energy
+   - Energy bar fills up (yellow when ready)
+   - Activate overload for 10 seconds of multi-color linking
+   - Shockwave destroys all nearby enemies instantly
+   - 30-second cooldown before next use
+
+8. INTEGRATION:
+   - OverloadMode automatically integrates with:
+     * ScoreManager (energy from kills)
+     * ResonanceSystem (multi-frequency linking)
+     * GameUI (energy display)
+     * All enemy types (shockwave damage)
+
+9. TESTING CARTOON FX EFFECTS:
+   - Use OverloadModeDebugger "Test Shockwave Effect" button
+   - Check console for "Created prefab shockwave effect" message
+   - If you see "fallback primitive", prefab isn't assigned properly
+
+10. TROUBLESHOOTING:
+   - No energy gain? Check ScoreManager.Instance exists
+   - Can't activate? Energy must be exactly 100%
+   - No multi-linking? Check ResonanceSystem has OverloadMode reference
+   - No UI updates? Assign energyText and overloadStatusText in GameUI
+
+NOTES:
+- Energy decays after 5 seconds of no kills (at 2/second)
+- Combo levels give bonus energy (5 per level)
+- Shockwave deals 999 damage (destroys all enemy types)
+- Screen shake effect lasts 1 second during activation
+*/
