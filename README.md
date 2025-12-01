@@ -2,7 +2,7 @@
 
 A fast-paced resonance-based action game where precision and timing are everything. Link enemies of the same color to create devastating chain reactions and survive increasingly challenging waves.
 
-![Game Logo]<img width="894" height="596" alt="Screenshot 2025-12-01 191401" src="https://github.com/user-attachments/assets/89eaaed8-9628-42f3-9fde-73cffd8a9d99" />
+<img width="894" height="596" alt="Screenshot 2025-12-01 191401" src="https://github.com/user-attachments/assets/89eaaed8-9628-42f3-9fde-73cffd8a9d99" />
 
 
 ## 🎮 Gameplay
