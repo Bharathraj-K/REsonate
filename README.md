@@ -2,7 +2,8 @@
 
 A fast-paced resonance-based action game where precision and timing are everything. Link enemies of the same color to create devastating chain reactions and survive increasingly challenging waves.
 
-![Game Logo](https://via.placeholder.com/600x200/000000/FF6B00?text=RESONATE!)
+![Game Logo]<img width="894" height="596" alt="Screenshot 2025-12-01 191401" src="https://github.com/user-attachments/assets/89eaaed8-9628-42f3-9fde-73cffd8a9d99" />
+
 
 ## 🎮 Gameplay
 
@@ -162,13 +163,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🎮 Play Now
 
-[**🕹️ Play RESONATE! in your browser**](https://yourusername.itch.io/resonate)
+[**🕹️ Play RESONATE! in your browser**](https://boltxcosmo.itch.io/resonate)
 
 ## 📞 Contact
 
-- **Developer**: Your Name
-- **Email**: your.email@example.com
-- **Project Link**: [https://github.com/yourusername/resonate-game](https://github.com/yourusername/resonate-game)
+- **Developer**: Bharathraj-K
+- **Email**: bharath8843@gmail.com
 
 ---
 
