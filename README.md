@@ -168,7 +168,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 - **Developer**: Bharathraj-K
-- **Email**: bharath8843@gmail.com
+- **Email**: alexmercer8843@gmail.com
 
 ---
 
